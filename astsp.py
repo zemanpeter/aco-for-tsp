@@ -58,7 +58,7 @@ def nearest_neighbour(cities, nn_list):
     return tour_length
 
 def create_pheromone_matrix(pheromone, cities, nn_list):
-    tau0 = nearest_neighbour(cities, nn_list)
+    tau0 = len(cities)/nearest_neighbour(cities, nn_list)
     for i in range(len(cities)):
         pheromone.append([tau0 for j in range(len(cities))])
 
