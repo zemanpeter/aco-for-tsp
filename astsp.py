@@ -194,7 +194,7 @@ if __name__ == '__main__':
         ITERATIONS = int(sys.argv[1])
         INPUT_FILE = sys.argv[2]
         ALPHA = 1
-        BETA = 2
+        BETA = 5
         RHO = 0.5
         aco_for_tsp()
     except (IndexError, ValueError):
