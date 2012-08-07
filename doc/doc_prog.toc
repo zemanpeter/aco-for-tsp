@@ -1,3 +1,0 @@
-\select@language {slovak}
-\contentsline {section}{\numberline {1}Probl\IeC {\'e}m obchodn\IeC {\'e}ho cestuj\IeC {\'u}ceho}{1}
-\contentsline {section}{\numberline {2}ACO na TSP}{1}
