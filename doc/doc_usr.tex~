@@ -1,0 +1,28 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[slovak]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[IL2]{fontenc}
+\usepackage{verbatim}
+\usepackage{a4wide}
+\title{\bf Dokumentácia k programu \texttt{astsp}}
+\date{\bf\today}
+\author{\bf Peter Zeman}
+\begin{document}
+\maketitle
+
+Program sa snaží riešiť Problém obchodného cestujúceho. To je problém, v ktorom máme na vstupe zadané mestá a cesty
+medzi nimi, spolu s dĺžkami. Chceme nájsť cestu takú, ktorá začína a končí v jednom meste, obsahuje všetky mestá a
+súčasne chceme, aby dĺžka takejto cesty bola minimálna.
+
+Cieľom programu však nie je nájsť optimálnu cestu, ale v rozumnom čase sa k optimálnej ceste čo najviac priblížiť.
+Program hľadá riešenie iteratívne, teda skončí po danom počte iterácií a počas každej iterácie sa snaží doposiaľ nájdené
+riešenie vylepšiť.
+
+Program sa ovláda jednoducho -- má dva povinné parametre. Prvý je počet iterácií, po ktorom má skončiť a druhý je názov
+súboru, ktorý obsahuje popis miest. Volanie porgramu bude teda vyzerať takto:
+\begin{verbatim}astsp <POCET ITERACII> <NAZOV SUBORU>\end{verbatim}
+Mesto je v súbore reprezentované dvojicou celých čísel na samostatnom riadku. Program predpokladá, že existuje cesta
+medzi kadždými dvoma mestami, a že jej dĺžka je ich euklidovská vzdialenosť, ktorú program spočíta zo zadaných
+súradníc.
+
+\end{document}
